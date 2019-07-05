@@ -8,19 +8,24 @@ const NavContainer = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 16px;
+  position: fixed;
+  top: 0;
+  width: calc(100% - 32px);
+  background-color: #fff;
 `
 
 const StyledLogoLink = styled(NavLink)`
   background: #fff url(${logo}) no-repeat center center;
   background-size: cover;
-  width: 64px;
-  height: 64px;
   display: block;
+  height: 64px;
+  width: 64px;
 `;
 
 const StyledNavLink = styled(NavLink)`
   font-size: 16px;
-  margin-right: 8px;
+  padding-left: 16px;
+  text-decoration: none;
 
   &.active {
     font-weight: bold;
