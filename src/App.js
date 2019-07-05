@@ -3,7 +3,7 @@ import React from 'react';
 import { HashRouter, Route } from 'react-router-dom';
 import { AppContainer, PagesContainer } from './AppStyles';
 import Nav from './components/Nav';
-import About from './pages/About';
+import Resume from './pages/Resume';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
@@ -17,8 +17,8 @@ const App = () => {
         />
         <PagesContainer>
           <Route
-            path="/about"
-            component={() => <About />}
+            path="/resume"
+            component={() => <Resume />}
           />
           <Route
             path="/projects"
