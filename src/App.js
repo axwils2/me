@@ -5,6 +5,8 @@ import './App.css';
 
 import Nav from './components/Nav';
 import About from './pages/About';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
 const App = () => {
   return (
@@ -16,6 +18,14 @@ const App = () => {
             <Route
               path="/about"
               component={() => <About />}
+            />
+            <Route
+              path="/projects"
+              component={() => <Projects />}
+            />
+            <Route
+              path="/contact"
+              component={() => <Contact />}
             />
           </Switch>
         </div>
