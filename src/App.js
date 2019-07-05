@@ -9,7 +9,7 @@ import About from './pages/About';
 const App = () => {
   return (
     
-      <BrowserRouter basename="/">
+      <BrowserRouter basename="/me">
         <div className="App">
           <Nav />
           <Switch>
